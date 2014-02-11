@@ -32,7 +32,7 @@ def write_to_sp(value)
    
   sp = SerialPort.new(port_str, baud_rate, data_bits, stop_bits, parity)
   logger.debug(sp)
-  sp.write(value)
+  sp.write(value + " ")
   logger.debug(value)
   sp.close 
 end
